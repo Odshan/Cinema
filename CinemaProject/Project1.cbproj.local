@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.812,=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.136,=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.491,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.254,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Project1.cbproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.356,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.491,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.h=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.491,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.741,=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit3.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.726,=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit2.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Project1.cpp"/>
+    <File Path="Project1PCH1.h"/>
+    <File Path="Unit1.cpp"/>
+    <File Path="Unit1.cpp"/>
+    <File Path="Unit1.dfm"/>
+    <File Path="Unit1.h"/>
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.dfm"/>
+    <File Path="Unit2.h"/>
+    <File Path="Unit3.cpp"/>
+    <File Path="Unit3.cpp"/>
+    <File Path="Unit3.dfm"/>
+    <File Path="Unit3.h"/>
+  </ProjectSortOrder>
+</BorlandProject>
