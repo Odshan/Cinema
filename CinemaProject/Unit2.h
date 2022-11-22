@@ -17,6 +17,7 @@ __published:	// IDE-managed Components
 	TLabel *Label3;
 	TLabel *Label4;
 	void __fastcall Label3Click(TObject *Sender);
+	void __fastcall Label4Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);

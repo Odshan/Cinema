@@ -14,12 +14,20 @@ TForm2 *Form2;
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormCreate(TObject *Sender)
+{
+		   Label4->Caption = "Cinema Info: \n\nLocation: \nPhone: \nOpens At: ";
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Label1Click(TObject *Sender)
 {
-	Form2->Show();
-	Form1->Hide();
+	Hide();
+	Form2->ShowModal();
+    Show();
+
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Label3Click(TObject *Sender)

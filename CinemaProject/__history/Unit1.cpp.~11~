@@ -14,12 +14,15 @@ TForm2 *Form2;
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
+
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Label1Click(TObject *Sender)
 {
-	Form2->Show();
-	Form1->Hide();
+	Hide();
+	Form2->ShowModal();
+    Show();
+
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Label3Click(TObject *Sender)
@@ -27,3 +30,10 @@ void __fastcall TForm1::Label3Click(TObject *Sender)
 	Form1->Close();
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm1::FormCreate(TObject *Sender)
+{
+		   Label4->Caption = "Line one #13#10 Line two";
+}
+//---------------------------------------------------------------------------
+
+

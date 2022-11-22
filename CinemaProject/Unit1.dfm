@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = [fsBold]
   OldCreateOrder = False
+  OnCreate = FormCreate
   DesignSize = (
     720
     480)
@@ -90,10 +91,10 @@ object Form1: TForm1
     object Label4: TLabel
       Left = 16
       Top = 16
-      Width = 145
-      Height = 33
+      Width = 457
+      Height = 362
       AutoSize = False
-      Caption = 'Cinema Info:'
+      Caption = 'Cinema Info: '
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBackground
       Font.Height = -20

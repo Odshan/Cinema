@@ -5,11 +5,13 @@
 
 #include "Unit1.h"
 #include "Unit2.h"
+#include "Unit3.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TForm1 *Form1;
 TForm2 *Form2;
+TForm3 *Form3;
 //---------------------------------------------------------------------------
 __fastcall TForm2::TForm2(TComponent* Owner)
 	: TForm(Owner)
@@ -18,7 +20,14 @@ __fastcall TForm2::TForm2(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm2::Label3Click(TObject *Sender)
 {
-	Form1->Show();
-	Form2->Close();
+	Close();
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm2::Label4Click(TObject *Sender)
+{
+	Hide();
+	Form3->ShowModal();
+	Close();
+}
+//---------------------------------------------------------------------------
+
