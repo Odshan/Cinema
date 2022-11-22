@@ -1,0 +1,49 @@
+Planning, ProjectWeek Opdr C Cinema:
+Team Leden :
+1. Mark Vogelzang
+2. Emiel Godlieb
+3. Stefan Douwma
+
+Planning Gemaakt op Dag 1:
+1. Dag 1 : Ontwerp:
+	1. Introductie
+	2. Groep Indeling
+	3. Project Keuze
+	4. Definities (Mark)
+	5. Doelstelling (Emiel)
+	6. Requirements (Emiel)
+	7. Mockup / Flow (Stefan)
+	8. Planning / Taakverdeling (Stefan)
+
+2. Dag 2 : Ontwikkeling:
+	1. Werken aan Taken
+	2. Informatie Moment
+	3. Werken aan Taken
+	4. Bijstelling Doelstelling (Mark)
+	5. Bijstelling Requirements (Emiel)
+	6. Bijstelling Planning (Stefan)
+
+3. Dag 3 : Ontwikkeling:
+	1. Werken aan Taken
+	2. Informatie Moment
+	3. Werken aan Taken
+	4. Einddoelen Vaststellen
+	5. Eindresultaten samenvoegen
+	6. Testen
+	7. Lijst van Breaking Issues
+
+
+4. Dag 4 : Oplevering:
+	1. Breaking Issues
+	2. Deliverables
+	3. Product opleveren (Mark)
+	4. Presentatie maken (Emiel & Stefan)
+	5. Product Presenteren
+
+	       		Dag 1 1/2 | Dag 1 2/2 | Dag 2 1/2 | Dag 2 2/2 | Dag 3 1/2 | Dag 3 2/2 | Dag 4 1/2 | Dag 4 2/2 |
+1. (1 - 8)		    ✔
+2. (1 - 6)		    		✔
+3. (1 - 7)		    			    ✔          ✔
+4. (1 - 5)		    			    			    ✔		✔
+
+-------------------
