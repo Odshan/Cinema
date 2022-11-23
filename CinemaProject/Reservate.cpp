@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Reservate.h"
+#include "MovieModel.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"

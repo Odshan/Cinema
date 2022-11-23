@@ -46,7 +46,7 @@ object Form3: TForm3
     object Label1: TLabel
       Left = 8
       Top = 13
-      Width = 185
+      Width = 156
       Height = 19
       Caption = '{InsertMovieData}'
       Font.Charset = DEFAULT_CHARSET
@@ -60,7 +60,7 @@ object Form3: TForm3
     object Label6: TLabel
       Left = 8
       Top = 352
-      Width = 185
+      Width = 156
       Height = 19
       Caption = '{InsertMovieData}'
       Font.Charset = DEFAULT_CHARSET
