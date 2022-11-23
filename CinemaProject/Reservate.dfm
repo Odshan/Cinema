@@ -27,7 +27,7 @@ object Form3: TForm3
     Color = clBackground
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
-    Font.Height = -20
+    Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentBackground = False
@@ -96,23 +96,23 @@ object Form3: TForm3
       OnClick = Label3Click
     end
     object Label4: TLabel
-      Left = -1
+      Left = 7
       Top = 8
-      Width = 209
-      Height = 33
+      Width = 194
+      Height = 249
       AutoSize = False
       Caption = '{InsertFoodOptions}'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBackground
-      Font.Height = -20
+      Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label5: TLabel
-      Left = 55
-      Top = 275
-      Width = 114
+      Left = 47
+      Top = 274
+      Width = 122
       Height = 16
       AutoSize = False
       Caption = '{InsertTotalCost}'

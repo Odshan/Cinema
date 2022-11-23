@@ -1,0 +1,39 @@
+[
+    {
+        "name" : "Corn",
+        "price" : 6
+    },
+
+    {
+        "name" : "Sinas",
+        "price" : 8
+    },
+
+    {
+        "name" : "Cola",
+        "price" : 8
+    },
+
+
+    {
+        "name" : "Casis",
+        "price" : 8
+    },
+
+
+    {
+        "name" : "Heineken",
+        "price" : 40
+    },
+
+
+    {
+        "name" : "Popcorn Sweet",
+        "price" : 15
+    },
+
+    {
+        "name" : "Popcorn Salty",
+        "price" : 15
+    }
+]

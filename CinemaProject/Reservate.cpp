@@ -13,15 +13,17 @@ TForm3 *Form3;
 //---------------------------------------------------------------------------
 __fastcall TForm3::TForm3(TComponent* Owner)
 	: TForm(Owner),
-    d_food(new FoodController())
+	d_food(new FoodController())
 {
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm3::FormCreate(TObject *Sender)
 {
-//	int x = 0;
-//	std::string s = std::to_string(x);
-//	Label5->Caption = "Total Cost : " + s;
+	d_food->Reload();
+
+	for (auto item : d_food->List()){
+		Label4->Caption = item->Name;
+	}
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm3::Label3Click(TObject *Sender)
