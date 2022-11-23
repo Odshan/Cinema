@@ -41,7 +41,8 @@ void __fastcall TfrmMain::cmdAddClick(TObject *Sender)
 
 void __fastcall TfrmMain::Button1Click(TObject *Sender)
 {
-   lvItems->Items->Clear();
+   MovieList->Items->Clear();
+
    for (auto item : d_ctlObjects->List())
    {
       auto row     = lvItems->Items->Add();

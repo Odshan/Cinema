@@ -8,15 +8,19 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
+#include <Vcl.ComCtrls.hpp>
 //---------------------------------------------------------------------------
+class MovieController;
+
 class TForm2 : public TForm
 {
+	MovieController *d_movie;
+
 __published:	// IDE-managed Components
 	TPanel *Panel1;
 	TPanel *Panel3;
 	TLabel *Label3;
-	TLabel *Label4;
-	TScrollBox *ScrollBox1;
+	TListView *MovieList;
 	void __fastcall Label3Click(TObject *Sender);
 	void __fastcall Label4Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);

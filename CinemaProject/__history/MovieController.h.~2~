@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef MovieControllerH
+#define MovieControllerH
+
+#include "base/ctlJsonDatabase.h"
+#include "models/MovieModel.h"
+
+class TctlObjects : public TctlJsonDatabase< TdoObject >
+{
+ public:
+   TctlObjects();
+
+ protected:
+ private:
+};
+//---------------------------------------------------------------------------
+#endif

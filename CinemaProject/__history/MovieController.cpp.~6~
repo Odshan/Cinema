@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "MovieController.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+MovieController::MovieController() :
+    TctlJsonDatabase< MovieObject >("json/movies.json")
+{
+}
+

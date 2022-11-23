@@ -1,0 +1,54 @@
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#pragma hdrstop
+//---------------------------------------------------------------------------
+#include "frmMainUnit.h"
+//---------------------------------------------------------------------------
+#include "ctlObjects.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TfrmMain *frmMain;
+//---------------------------------------------------------------------------
+__fastcall TfrmMain::TfrmMain(TComponent *Owner) :
+    TForm(Owner),
+    d_ctlObjects(new TctlObjects())
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TfrmMain::cmdLoadClick(TObject *Sender)
+{
+   d_ctlObjects->Reload();
+
+   Memo1->Text = d_ctlObjects->AsString();
+}
+//---------------------------------------------------------------------------
+void __fastcall TfrmMain::cmdSaveClick(TObject *Sender)
+{
+   d_ctlObjects->SaveToDisk();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfrmMain::cmdAddClick(TObject *Sender)
+{
+   auto o       = new TdoObject();
+   o->VarString = edtStringValue->Text;
+   o->VarInt    = edtIntegerValue->Text.ToIntDef(0);
+   o->VarDouble = edtDoubleValue->Text.ToDouble();
+   d_ctlObjects->Add(o);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfrmMain::Button1Click(TObject *Sender)
+{
+   MovieList->Items->Clear();
+   for (auto item : d_ctlObjects->List())
+   {
+      auto row     = lvItems->Items->Add();
+      row->Caption = item->VarString;
+      row->SubItems->Add(String(item->VarInt));
+      row->SubItems->Add(FormatFloat("0.00", item->VarDouble));
+   }
+}
+//---------------------------------------------------------------------------
+

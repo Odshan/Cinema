@@ -57,33 +57,32 @@ object Form2: TForm2
       ParentFont = False
       OnClick = Label3Click
     end
-    object ScrollBox1: TScrollBox
-      Left = 16
-      Top = 16
-      Width = 670
-      Height = 370
-      Color = clScrollBar
-      ParentColor = False
+    object MovieList: TListView
+      Left = 8
+      Top = 8
+      Width = 689
+      Height = 378
+      Columns = <
+        item
+          Caption = 'Movie'
+          Width = 335
+        end
+        item
+          Caption = 'Price'
+          Width = 100
+        end
+        item
+          Caption = 'Age'
+          Width = 100
+        end
+        item
+          Caption = 'Start Time'
+          Width = 150
+        end>
+      ReadOnly = True
+      RowSelect = True
       TabOrder = 0
-      DesignSize = (
-        666
-        366)
-      object Label4: TLabel
-        Left = 22
-        Top = 15
-        Width = 579
-        Height = 600
-        Anchors = []
-        AutoSize = False
-        Caption = '{ Insert Movie JSON here}'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBackground
-        Font.Height = -20
-        Font.Name = 'Tahoma'
-        Font.Style = [fsBold]
-        ParentFont = False
-        OnClick = Label4Click
-      end
+      ViewStyle = vsReport
     end
   end
 end

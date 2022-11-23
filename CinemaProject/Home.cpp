@@ -19,6 +19,8 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::FormCreate(TObject *Sender)
 {
+
+
 	Label4->Caption = "Cinema Info: \n\nLocation: \nPhone: \nOpens At: ";
 }
 //---------------------------------------------------------------------------
