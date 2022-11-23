@@ -9,6 +9,8 @@ object frmMain: TfrmMain
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OldCreateOrder = True
+  PixelsPerInch = 96
   TextHeight = 15
   object lblString: TLabel
     Left = 8
@@ -56,8 +58,6 @@ object frmMain: TfrmMain
     Height = 434
     Align = alRight
     TabOrder = 2
-    ExplicitLeft = 186
-    ExplicitHeight = 402
     object Splitter1: TSplitter
       Left = 1
       Top = 262
@@ -81,10 +81,8 @@ object frmMain: TfrmMain
         end
         item
         end>
-      Items.ItemData = {}
       TabOrder = 0
       ViewStyle = vsReport
-      ExplicitTop = 233
     end
     object Memo1: TMemo
       Left = 1
@@ -93,7 +91,6 @@ object frmMain: TfrmMain
       Height = 261
       Align = alClient
       TabOrder = 1
-      ExplicitHeight = 229
     end
   end
   object edtStringValue: TEdit
