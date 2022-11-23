@@ -1,9 +1,6 @@
 //---------------------------------------------------------------------------
 
-#pragma hdrstop
-
-#include "MoviesModel.h"
+#ifndef MoviesModelH
+#define MoviesModelH
 //---------------------------------------------------------------------------
-#pragma package(smart_init)
-
-
+#endif
