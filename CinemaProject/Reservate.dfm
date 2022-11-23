@@ -36,7 +36,7 @@ object Form3: TForm3
   end
   object Panel2: TPanel
     Left = 8
-    Top = 47
+    Top = 46
     Width = 200
     Height = 424
     Anchors = [akLeft, akTop, akRight, akBottom]
@@ -44,8 +44,8 @@ object Form3: TForm3
     ParentBackground = False
     TabOrder = 1
     object Label1: TLabel
-      Left = 8
-      Top = 8
+      Left = 7
+      Top = 9
       Width = 193
       Height = 24
       Caption = '{InsertMovieData}'
@@ -81,7 +81,7 @@ object Form3: TForm3
       OnClick = Label3Click
     end
     object Label4: TLabel
-      Left = 0
+      Left = -1
       Top = 8
       Width = 209
       Height = 33
@@ -93,6 +93,36 @@ object Form3: TForm3
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 55
+      Top = 275
+      Width = 114
+      Height = 16
+      AutoSize = False
+      Caption = '{InsertTotalCost}'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Panel36: TPanel
+      Left = 16
+      Top = 312
+      Width = 185
+      Height = 41
+      Caption = 'Book Now'
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNone
+      Font.Height = -20
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 0
     end
   end
   object Panel4: TPanel

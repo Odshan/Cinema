@@ -58,7 +58,7 @@ object Form2: TForm2
       OnClick = Label3Click
     end
     object MovieList: TListView
-      Left = 8
+      Left = -16
       Top = 8
       Width = 689
       Height = 378
@@ -83,6 +83,7 @@ object Form2: TForm2
       RowSelect = True
       TabOrder = 0
       ViewStyle = vsReport
+      OnSelectItem = MovieListSelectItem
     end
   end
 end

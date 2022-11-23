@@ -24,6 +24,8 @@ __published:	// IDE-managed Components
 	void __fastcall Label3Click(TObject *Sender);
 	void __fastcall Label4Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall MovieListSelectItem(TObject *Sender, TListItem *Item, bool Selected);
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);

@@ -8,6 +8,8 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
+
+#include "MovieModel.h"
 //---------------------------------------------------------------------------
 class TForm3 : public TForm
 {
@@ -51,11 +53,15 @@ __published:	// IDE-managed Components
 	TPanel *Panel33;
 	TPanel *Panel34;
 	TPanel *Panel35;
+	TLabel *Label5;
+	TPanel *Panel36;
 	void __fastcall Label3Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm3(TComponent* Owner);
+
+	void SetMovie(MovieObject *aValue);
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TForm3 *Form3;

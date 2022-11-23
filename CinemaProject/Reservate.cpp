@@ -24,4 +24,7 @@ void __fastcall TForm3::Label3Click(TObject *Sender)
 	Close();
 }
 //---------------------------------------------------------------------------
-
+void TForm3::SetMovie(MovieObject *Movie)
+{
+	Label1->Caption = Movie->Name;
+}

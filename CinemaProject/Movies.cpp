@@ -35,6 +35,8 @@ void __fastcall TForm2::FormCreate(TObject *Sender)
 	  row->SubItems->Add(String(item->Price));
 	  row->SubItems->Add(String(item->Age));
 	  row->SubItems->Add(String(item->StartTime));
+
+	  row->Data = item;
    }
 }
 //---------------------------------------------------------------------------
@@ -51,4 +53,19 @@ void __fastcall TForm2::Label4Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+
+void __fastcall TForm2::MovieListSelectItem(TObject *Sender, TListItem *Item, bool Selected)
+
+{
+ if (Item != nullptr)
+ {
+	 MovieObject * o = reinterpret_cast<MovieObject *>(Item->Data);
+	Hide();
+    Form3->SetMovie(o);
+	Form3->ShowModal();
+	Close();
+ }
+}
+//---------------------------------------------------------------------------
 
