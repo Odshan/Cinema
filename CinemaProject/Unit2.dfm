@@ -11,6 +11,7 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   DesignSize = (
     720
     480)
@@ -56,20 +57,33 @@ object Form2: TForm2
       ParentFont = False
       OnClick = Label3Click
     end
-    object Label4: TLabel
+    object ScrollBox1: TScrollBox
       Left = 16
       Top = 16
-      Width = 145
-      Height = 33
-      AutoSize = False
-      Caption = 'Movie 1:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBackground
-      Font.Height = -20
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-      OnClick = Label4Click
+      Width = 670
+      Height = 370
+      Color = clScrollBar
+      ParentColor = False
+      TabOrder = 0
+      DesignSize = (
+        649
+        366)
+      object Label4: TLabel
+        Left = 22
+        Top = 15
+        Width = 579
+        Height = 600
+        Anchors = []
+        AutoSize = False
+        Caption = '{ Insert Movie JSON here}'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBackground
+        Font.Height = -20
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        OnClick = Label4Click
+      end
     end
   end
 end

@@ -11,6 +11,7 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   DesignSize = (
     719
     479)
@@ -42,14 +43,12 @@ object Form3: TForm3
     Color = clScrollBar
     ParentBackground = False
     TabOrder = 1
-    ExplicitWidth = 201
-    ExplicitHeight = 425
     object Label1: TLabel
-      Left = 16
-      Top = 16
-      Width = 86
-      Height = 24
-      Caption = 'Movie 1:'
+      Left = 0
+      Top = 8
+      Width = 193
+      Height = 410
+      Caption = '{InsertMovieData}'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBackground
       Font.Height = -20
@@ -59,7 +58,7 @@ object Form3: TForm3
     end
   end
   object Panel3: TPanel
-    Left = 496
+    Left = 495
     Top = 47
     Width = 215
     Height = 424
@@ -67,8 +66,6 @@ object Form3: TForm3
     Color = clScrollBar
     ParentBackground = False
     TabOrder = 2
-    ExplicitWidth = 216
-    ExplicitHeight = 425
     object Label3: TLabel
       Left = 136
       Top = 392
@@ -84,12 +81,12 @@ object Form3: TForm3
       OnClick = Label3Click
     end
     object Label4: TLabel
-      Left = 16
-      Top = 16
-      Width = 145
+      Left = 0
+      Top = 8
+      Width = 209
       Height = 33
       AutoSize = False
-      Caption = 'Add Food:'
+      Caption = '{InsertFoodOptions}'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBackground
       Font.Height = -20
@@ -99,12 +96,328 @@ object Form3: TForm3
     end
   end
   object Panel4: TPanel
-    Left = 215
+    Left = 214
     Top = 46
     Width = 275
     Height = 425
     Color = cl3DLight
     ParentBackground = False
     TabOrder = 3
+    object Panel5: TPanel
+      Left = 40
+      Top = 368
+      Width = 201
+      Height = 41
+      Caption = 'Scherm'
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -20
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Panel6: TPanel
+      Left = 24
+      Top = 297
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Panel7: TPanel
+      Left = 71
+      Top = 297
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Panel8: TPanel
+      Left = 118
+      Top = 297
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Panel9: TPanel
+      Left = 165
+      Top = 297
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Panel10: TPanel
+      Left = 212
+      Top = 297
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 5
+    end
+    object Panel11: TPanel
+      Left = 118
+      Top = 250
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 6
+    end
+    object Panel12: TPanel
+      Left = 165
+      Top = 250
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 7
+    end
+    object Panel13: TPanel
+      Left = 71
+      Top = 250
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 8
+    end
+    object Panel14: TPanel
+      Left = 24
+      Top = 250
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 9
+    end
+    object Panel15: TPanel
+      Left = 212
+      Top = 250
+      Width = 41
+      Height = 41
+      Color = clScrollBar
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowFrame
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 10
+    end
+  end
+  object Panel16: TPanel
+    Left = 332
+    Top = 249
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Panel17: TPanel
+    Left = 379
+    Top = 249
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Panel18: TPanel
+    Left = 285
+    Top = 249
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Panel19: TPanel
+    Left = 238
+    Top = 249
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Panel20: TPanel
+    Left = 426
+    Top = 249
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Panel21: TPanel
+    Left = 126
+    Top = 305
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Panel22: TPanel
+    Left = 173
+    Top = 305
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Panel23: TPanel
+    Left = 79
+    Top = 305
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Panel24: TPanel
+    Left = 238
+    Top = 202
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 12
+  end
+  object Panel25: TPanel
+    Left = 426
+    Top = 202
+    Width = 41
+    Height = 41
+    Color = clScrollBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 13
   end
 end

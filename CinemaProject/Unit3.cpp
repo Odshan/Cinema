@@ -14,10 +14,14 @@ __fastcall TForm3::TForm3(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm3::FormCreate(TObject *Sender)
+{
+	//TODO Get clicked Movie in Form 2 (Movie)
+}
+//---------------------------------------------------------------------------
 void __fastcall TForm3::Label3Click(TObject *Sender)
 {
 	Close();
 }
 //---------------------------------------------------------------------------
-
 

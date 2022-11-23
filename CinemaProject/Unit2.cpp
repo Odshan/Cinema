@@ -18,6 +18,11 @@ __fastcall TForm2::TForm2(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm2::FormCreate(TObject *Sender)
+{
+	//TODO insert Movie Json in label 4!!
+}
+//---------------------------------------------------------------------------
 void __fastcall TForm2::Label3Click(TObject *Sender)
 {
 	Close();
@@ -30,4 +35,5 @@ void __fastcall TForm2::Label4Click(TObject *Sender)
 	Close();
 }
 //---------------------------------------------------------------------------
+
 

@@ -53,7 +53,7 @@ object Form1: TForm1
     end
     object Label2: TLabel
       Left = 16
-      Top = 64
+      Top = 46
       Width = 167
       Height = 24
       Caption = 'My Reservations'
@@ -94,7 +94,7 @@ object Form1: TForm1
       Width = 457
       Height = 362
       AutoSize = False
-      Caption = 'Cinema Info: '
+      Caption = '{ Insert Cinema Info}'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBackground
       Font.Height = -20

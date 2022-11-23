@@ -19,7 +19,29 @@ __published:	// IDE-managed Components
 	TLabel *Label3;
 	TLabel *Label4;
 	TPanel *Panel4;
+	TPanel *Panel5;
+	TPanel *Panel6;
+	TPanel *Panel7;
+	TPanel *Panel8;
+	TPanel *Panel9;
+	TPanel *Panel10;
+	TPanel *Panel11;
+	TPanel *Panel12;
+	TPanel *Panel13;
+	TPanel *Panel14;
+	TPanel *Panel15;
+	TPanel *Panel16;
+	TPanel *Panel17;
+	TPanel *Panel18;
+	TPanel *Panel19;
+	TPanel *Panel20;
+	TPanel *Panel21;
+	TPanel *Panel22;
+	TPanel *Panel23;
+	TPanel *Panel24;
+	TPanel *Panel25;
 	void __fastcall Label3Click(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm3(TComponent* Owner);
