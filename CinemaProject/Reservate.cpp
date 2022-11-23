@@ -16,7 +16,9 @@ __fastcall TForm3::TForm3(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm3::FormCreate(TObject *Sender)
 {
-	//TODO Get clicked Movie in Form 2 (Movie)
+//	int x = 0;
+//	std::string s = std::to_string(x);
+//	Label5->Caption = "Total Cost : " + s;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm3::Label3Click(TObject *Sender)
@@ -26,5 +28,11 @@ void __fastcall TForm3::Label3Click(TObject *Sender)
 //---------------------------------------------------------------------------
 void TForm3::SetMovie(MovieObject *Movie)
 {
-	Label1->Caption = Movie->Name;
+	Label1->Caption =  	"Movie : " + Movie->Name + "\n" +
+						"Description : " + Movie->Description + "\n"  +
+						"Age Restriction : " + Movie->Age + "\n" +
+						"Duration : " + Movie->Duration;
+
+	Label6->Caption =	"Price : " + Movie->Price + "\n" +
+						"Starting Time : " + Movie->StartTime;
 }

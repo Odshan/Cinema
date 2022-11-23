@@ -19,7 +19,6 @@ __fastcall TForm2::TForm2(TComponent *Owner) :
 	TForm(Owner),
 	d_movie(new MovieController())
 {
-
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm2::FormCreate(TObject *Sender)
@@ -52,17 +51,14 @@ void __fastcall TForm2::Label4Click(TObject *Sender)
 	Close();
 }
 //---------------------------------------------------------------------------
-
-
-
 void __fastcall TForm2::MovieListSelectItem(TObject *Sender, TListItem *Item, bool Selected)
 
 {
  if (Item != nullptr)
  {
-	 MovieObject * o = reinterpret_cast<MovieObject *>(Item->Data);
+	MovieObject * o = reinterpret_cast<MovieObject *>(Item->Data);
 	Hide();
-    Form3->SetMovie(o);
+	Form3->SetMovie(o);
 	Form3->ShowModal();
 	Close();
  }

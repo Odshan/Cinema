@@ -44,17 +44,32 @@ object Form3: TForm3
     ParentBackground = False
     TabOrder = 1
     object Label1: TLabel
-      Left = 7
-      Top = 9
-      Width = 193
-      Height = 24
+      Left = 8
+      Top = 13
+      Width = 185
+      Height = 19
       Caption = '{InsertMovieData}'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBackground
-      Font.Height = -20
+      Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
+      WordWrap = True
+    end
+    object Label6: TLabel
+      Left = 8
+      Top = 352
+      Width = 185
+      Height = 19
+      Caption = '{InsertMovieData}'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      WordWrap = True
     end
   end
   object Panel3: TPanel

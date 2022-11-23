@@ -55,6 +55,7 @@ __published:	// IDE-managed Components
 	TPanel *Panel35;
 	TLabel *Label5;
 	TPanel *Panel36;
+	TLabel *Label6;
 	void __fastcall Label3Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 private:	// User declarations

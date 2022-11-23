@@ -58,7 +58,7 @@ object Form2: TForm2
       OnClick = Label3Click
     end
     object MovieList: TListView
-      Left = -16
+      Left = 0
       Top = 8
       Width = 689
       Height = 378
