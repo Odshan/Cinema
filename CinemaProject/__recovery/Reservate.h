@@ -62,7 +62,8 @@ __published:	// IDE-managed Components
 	TLabel *Label5;
 	TPanel *Panel36;
 	TLabel *Label6;
-	TListView *MovieList;
+	TListView *FoodList;
+	TListView *SeatsList;
 	void __fastcall Label3Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 private:	// User declarations

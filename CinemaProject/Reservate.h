@@ -11,6 +11,7 @@
 
 #include "MovieModel.h"
 #include "FoodController.h"
+#include <Vcl.ComCtrls.hpp>
 
 class FoodController;
 
@@ -25,7 +26,6 @@ __published:	// IDE-managed Components
 	TLabel *Label1;
 	TPanel *Panel3;
 	TLabel *Label3;
-	TLabel *Label4;
 	TPanel *Panel4;
 	TPanel *Panel5;
 	TPanel *Panel6;
@@ -62,6 +62,8 @@ __published:	// IDE-managed Components
 	TLabel *Label5;
 	TPanel *Panel36;
 	TLabel *Label6;
+	TListView *FoodList;
+	TListView *SeatsList;
 	void __fastcall Label3Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 private:	// User declarations

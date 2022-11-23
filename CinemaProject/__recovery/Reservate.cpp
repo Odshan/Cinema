@@ -22,7 +22,10 @@ void __fastcall TForm3::FormCreate(TObject *Sender)
 	d_food->Reload();
 	FoodList->Items->Clear();
 	for (auto item : d_food->List()){
-		Label4->Caption = item->Name;
+		auto Row = FoodList->Items->Add();
+
+		Row->Caption = item->Name;
+		Row->SubItems->Add(String(item->Price));
 	}
 }
 //---------------------------------------------------------------------------
