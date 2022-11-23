@@ -60,7 +60,6 @@ object Form4: TForm4
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      OnClick = Label3Click
     end
     object Label4: TLabel
       Left = 248

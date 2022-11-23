@@ -11,21 +11,12 @@
 //---------------------------------------------------------------------------
 class TForm4 : public TForm
 {
-__published:	// IDE-managed Components
+	__published:	// IDE-managed Components
 	TPanel *Panel1;
-<<<<<<< Updated upstream:CinemaProject/Unit4.h
-	TPanel *Panel3;
-	TLabel *Label3;
-	TLabel *Label4;
 	TEdit *Edit1;
-=======
-	TPanel *Panel2;
-	TLabel *Label1;
-	TLabel *Label2;
 	TPanel *Panel3;
-	TLabel *Label3;
 	TLabel *Label4;
->>>>>>> Stashed changes:CinemaProject/__history/Unit3.h.~1~
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm4(TComponent* Owner);
