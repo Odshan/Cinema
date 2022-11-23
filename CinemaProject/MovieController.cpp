@@ -8,7 +8,7 @@
 #pragma package(smart_init)
 
 MovieController::MovieController() :
-    TctlJsonDatabase< MovieObject >("movies.json")
+    TctlJsonDatabase< MovieModel >("movies.json")
 {
 }
 

@@ -14,7 +14,6 @@ TForm2 *Form2;
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
-//	d_ctlObjects(new TctlObjects())
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::FormCreate(TObject *Sender)

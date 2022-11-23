@@ -60,7 +60,7 @@ void __fastcall TForm2::MovieListSelectItem(TObject *Sender, TListItem *Item, bo
 {
  if (Item != nullptr)
  {
-	 MovieObject * o = reinterpret_cast<MovieObject *>(Item->Data);
+	 MovieModel * o = reinterpret_cast<MovieModel *>(Item->Data);
 	Hide();
     Form3->SetMovie(o);
 	Form3->ShowModal();

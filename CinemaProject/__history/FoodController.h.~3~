@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef FoodControllerH
+#define FoodControllerH
+
+#include "ctlJsonDatabase.h"
+#include "FoodModel.h"
+
+class MovieController : public TctlJsonDatabase< MovieObject >
+{
+ public:
+   MovieController();
+
+ protected:
+ private:
+};
+//---------------------------------------------------------------------------
+#endif

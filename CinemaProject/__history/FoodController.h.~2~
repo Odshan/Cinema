@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#ifndef FoodControllerH
+#define FoodControllerH
+
+class MovieController : public TctlJsonDatabase< MovieObject >
+{
+ public:
+   MovieController();
+
+ protected:
+ private:
+};
+//---------------------------------------------------------------------------
+#endif

@@ -6,7 +6,7 @@
 #include "JsonObject.h"
 
 
-class MovieObject : public TJsonObject
+class MovieModel : public TJsonObject
 {
    String d_name;
    String d_description;
@@ -16,7 +16,7 @@ class MovieObject : public TJsonObject
    String d_starttime;
 
  public:
-   MovieObject();
+   MovieModel();
 
    __property String	Name		= {read = d_name, write = d_name };
    __property String	Description	= {read = d_description, write = d_description };

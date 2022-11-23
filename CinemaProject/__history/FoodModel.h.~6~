@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#ifndef FoodModelH
+#define FoodModelH
+
+#include "JsonObject.h"
+
+class FoodModel : public TJsonObject
+{
+   String xxx;
+
+ public:
+   FoodModel();
+
+   __property String    Xxx   = {read = d_starttime, write = d_starttime };
+
+ protected:
+ private:
+   void         FromJson(TJSONObject *aObject);
+   TJSONObject *ToJson();
+};
+//---------------------------------------------------------------------------
+#endif

@@ -6,7 +6,7 @@
 #include "ctlJsonDatabase.h"
 #include "MovieModel.h"
 
-class MovieController : public TctlJsonDatabase< MovieObject >
+class MovieController : public TctlJsonDatabase< MovieModel >
 {
  public:
    MovieController();

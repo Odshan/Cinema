@@ -7,11 +7,11 @@
 #pragma package(smart_init)
 
 
-MovieObject::MovieObject()
+MovieModel::MovieModel()
 {
 }
 
-void MovieObject::FromJson(TJSONObject *aObject)
+void MovieModel::FromJson(TJSONObject *aObject)
 {
    d_name = GetString(aObject, "name");
    d_description = GetString(aObject, "description");
@@ -21,7 +21,7 @@ void MovieObject::FromJson(TJSONObject *aObject)
    d_starttime = GetString(aObject, "starttime");
 }
 
-TJSONObject *MovieObject::ToJson()
+TJSONObject *MovieModel::ToJson()
 {
    auto o = new TJSONObject();
 
