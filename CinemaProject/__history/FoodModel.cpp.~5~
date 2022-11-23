@@ -2,26 +2,20 @@
 
 #pragma hdrstop
 
-#include "MovieModel.h"
+#include "FoodModel.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
-
-MovieModel::MovieModel()
+FoodModel::FoodModel()
 {
 }
 
-void MovieModel::FromJson(TJSONObject *aObject)
+void FoodModel::FromJson(TJSONObject *aObject)
 {
-   d_name = GetString(aObject, "name");
-   d_description = GetString(aObject, "description");
-   d_age = GetString(aObject, "age");
-   d_duration = GetString(aObject, "duration");
-   d_price = GetString(aObject, "price");
-   d_starttime = GetString(aObject, "starttime");
+   xxx = GetString(aObject, "xxx");
 }
 
-TJSONObject *MovieModel::ToJson()
+TJSONObject *MovieObject::ToJson()
 {
    auto o = new TJSONObject();
 

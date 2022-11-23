@@ -2,13 +2,12 @@
 
 #pragma hdrstop
 
-#include "MovieController.h"
-#include "MovieModel.h"
+#include "FoodController.h"
+#include "FoodModel.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
-MovieController::MovieController() :
-    TctlJsonDatabase< MovieModel >("movies.json")
+FoodController::FoodController() :
+    TctlJsonDatabase< FoodModel >("food.json")
 {
 }
-

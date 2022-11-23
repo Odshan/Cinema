@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "FoodModel.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+FoodModel::FoodModel()
+{
+}
+
+void FoodModel::FromJson(TJSONObject *aObject)
+{
+   xxx = GetString(aObject, "xxx");
+}
+
+TJSONObject *MovieObject::ToJson()
+{
+   auto o = new TJSONObject();
+
+   AddPair(o, "xxx", xxx);
+
+   return o;
+}

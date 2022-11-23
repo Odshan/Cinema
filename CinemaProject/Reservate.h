@@ -62,7 +62,7 @@ private:	// User declarations
 public:		// User declarations
 	__fastcall TForm3(TComponent* Owner);
 
-	void SetMovie(MovieObject *aValue);
+	void SetMovie(MovieModel *aValue);
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TForm3 *Form3;

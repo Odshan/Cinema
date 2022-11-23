@@ -11,7 +11,7 @@ MovieModel::MovieModel()
 {
 }
 
-void MovieModel::FromJson(TJSONObject *aObject)
+void MovieObject::FromJson(TJSONObject *aObject)
 {
    d_name = GetString(aObject, "name");
    d_description = GetString(aObject, "description");
@@ -21,7 +21,7 @@ void MovieModel::FromJson(TJSONObject *aObject)
    d_starttime = GetString(aObject, "starttime");
 }
 
-TJSONObject *MovieModel::ToJson()
+TJSONObject *MovieObject::ToJson()
 {
    auto o = new TJSONObject();
 

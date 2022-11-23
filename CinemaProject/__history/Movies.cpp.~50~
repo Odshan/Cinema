@@ -60,7 +60,11 @@ void __fastcall TForm2::MovieListSelectItem(TObject *Sender, TListItem *Item, bo
 {
  if (Item != nullptr)
  {
+<<<<<<<< HEAD:CinemaProject/__history/Movies.cpp.~50~
 	 MovieObject * o = reinterpret_cast<MovieObject *>(Item->Data);
+========
+	 MovieModel * o = reinterpret_cast<MovieObject *>(Item->Data);
+>>>>>>>> 334aeba5636c068240daacfb4d7a24c2d611e330:CinemaProject/__history/Movies.cpp.~51~
 	Hide();
     Form3->SetMovie(o);
 	Form3->ShowModal();

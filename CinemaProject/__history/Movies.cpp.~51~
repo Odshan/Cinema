@@ -29,10 +29,14 @@ void __fastcall TForm2::FormCreate(TObject *Sender)
     MovieList->Items->Clear();
    for (auto item : d_movie->List())
    {
-      auto row     = MovieList->Items->Add();
+	  auto row = MovieList->Items->Add();
+
       row->Caption = item->Name;
-      row->SubItems->Add(String(item->VarInt));
-      row->SubItems->Add(FormatFloat("0.00", item->VarDouble));
+	  row->SubItems->Add(String(item->Price));
+	  row->SubItems->Add(String(item->Age));
+	  row->SubItems->Add(String(item->StartTime));
+
+	  row->Data = item;
    }
 }
 //---------------------------------------------------------------------------
@@ -49,4 +53,23 @@ void __fastcall TForm2::Label4Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+
+void __fastcall TForm2::MovieListSelectItem(TObject *Sender, TListItem *Item, bool Selected)
+
+{
+ if (Item != nullptr)
+ {
+<<<<<<<< HEAD:CinemaProject/__history/Movies.cpp.~50~
+	 MovieObject * o = reinterpret_cast<MovieObject *>(Item->Data);
+========
+	 MovieModel * o = reinterpret_cast<MovieObject *>(Item->Data);
+>>>>>>>> 334aeba5636c068240daacfb4d7a24c2d611e330:CinemaProject/__history/Movies.cpp.~51~
+	Hide();
+    Form3->SetMovie(o);
+	Form3->ShowModal();
+	Close();
+ }
+}
+//---------------------------------------------------------------------------
 

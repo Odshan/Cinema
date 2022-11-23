@@ -1,12 +1,9 @@
 //---------------------------------------------------------------------------
 
-#ifndef MovieControllerH
-#define MovieControllerH
+#ifndef FoodControllerH
+#define FoodControllerH
 
-#include "ctlJsonDatabase.h"
-#include "MovieModel.h"
-
-class MovieController : public TctlJsonDatabase< MovieModel >
+class MovieController : public TctlJsonDatabase< MovieObject >
 {
  public:
    MovieController();

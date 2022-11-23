@@ -1,12 +1,11 @@
 //---------------------------------------------------------------------------
 
-#ifndef MovieModelH
-#define MovieModelH
+#ifndef FoodModelH
+#define FoodModelH
 
 #include "JsonObject.h"
 
-
-class MovieModel : public TJsonObject
+class FoodModel : public TJsonObject
 {
    String d_name;
    String d_description;
@@ -16,7 +15,7 @@ class MovieModel : public TJsonObject
    String d_starttime;
 
  public:
-   MovieModel();
+   MovieObject();
 
    __property String	Name		= {read = d_name, write = d_name };
    __property String	Description	= {read = d_description, write = d_description };
