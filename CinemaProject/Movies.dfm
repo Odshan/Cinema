@@ -66,7 +66,7 @@ object Form2: TForm2
       ParentColor = False
       TabOrder = 0
       DesignSize = (
-        649
+        666
         366)
       object Label4: TLabel
         Left = 22

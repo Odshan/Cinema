@@ -1,30 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.491,C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.h=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.136,=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.491,C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.dfm=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.356,C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Project1PCH1.h=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.812,=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.741,=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit3.cpp</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.491,C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.cpp=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.726,=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit2.cpp</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.254,C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Project1.cbproj=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.136,=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.491,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.491,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.dfm</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.254,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Project1.cbproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.812,=C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.491,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Unit1.h=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit1.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.741,=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit3.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.726,=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Unit2.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.356,C:\Users\stefa\OneDrive\Documenten\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\stefa\OneDrive\Bureaublad\Cinema\CinemaProject\Project1PCH1.h</Transaction>
+    <Transaction>2022/11/23 09:24:09.774,C:\Users\test\Documents\Cinema\CinemaProject\Home.h=C:\Users\test\Documents\Cinema\CinemaProject\Unit1.h</Transaction>
+    <Transaction>2022/11/23 09:24:09.774,C:\Users\test\Documents\Cinema\CinemaProject\Home.dfm=C:\Users\test\Documents\Cinema\CinemaProject\Unit1.dfm</Transaction>
+    <Transaction>2022/11/23 09:24:09.774,C:\Users\test\Documents\Cinema\CinemaProject\Home.cpp=C:\Users\test\Documents\Cinema\CinemaProject\Unit1.cpp</Transaction>
+    <Transaction>2022/11/23 09:24:28.388,C:\Users\test\Documents\Cinema\CinemaProject\Movies.cpp=C:\Users\test\Documents\Cinema\CinemaProject\Unit2.cpp</Transaction>
+    <Transaction>2022/11/23 09:24:28.388,C:\Users\test\Documents\Cinema\CinemaProject\Movies.h=C:\Users\test\Documents\Cinema\CinemaProject\Unit2.h</Transaction>
+    <Transaction>2022/11/23 09:24:28.388,C:\Users\test\Documents\Cinema\CinemaProject\Movies.dfm=C:\Users\test\Documents\Cinema\CinemaProject\Unit2.dfm</Transaction>
+    <Transaction>2022/11/23 09:24:47.496,C:\Users\test\Documents\Cinema\CinemaProject\Reservate.dfm=C:\Users\test\Documents\Cinema\CinemaProject\Unit3.dfm</Transaction>
+    <Transaction>2022/11/23 09:24:47.496,C:\Users\test\Documents\Cinema\CinemaProject\Reservate.h=C:\Users\test\Documents\Cinema\CinemaProject\Unit3.h</Transaction>
+    <Transaction>2022/11/23 09:24:47.496,C:\Users\test\Documents\Cinema\CinemaProject\Reservate.cpp=C:\Users\test\Documents\Cinema\CinemaProject\Unit3.cpp</Transaction>
+    <Transaction>2022/11/23 09:25:06.326,C:\Users\test\Documents\Cinema\CinemaProject\ReservationCode.dfm=C:\Users\test\Documents\Cinema\CinemaProject\Unit4.dfm</Transaction>
+    <Transaction>2022/11/23 09:25:06.326,C:\Users\test\Documents\Cinema\CinemaProject\ReservationCode.h=C:\Users\test\Documents\Cinema\CinemaProject\Unit4.h</Transaction>
+    <Transaction>2022/11/23 09:25:06.326,C:\Users\test\Documents\Cinema\CinemaProject\ReservationCode.cpp=C:\Users\test\Documents\Cinema\CinemaProject\Unit4.cpp</Transaction>
+    <Transaction>2022/11/23 09:25:26.865,C:\Users\test\Documents\Cinema\CinemaProject\MyReservation.h=C:\Users\test\Documents\Cinema\CinemaProject\Unit5.h</Transaction>
+    <Transaction>2022/11/23 09:25:26.865,C:\Users\test\Documents\Cinema\CinemaProject\MyReservation.dfm=C:\Users\test\Documents\Cinema\CinemaProject\Unit5.dfm</Transaction>
+    <Transaction>2022/11/23 09:25:26.865,C:\Users\test\Documents\Cinema\CinemaProject\MyReservation.cpp=C:\Users\test\Documents\Cinema\CinemaProject\Unit5.cpp</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
+    <VirtualFolder ID="{3B2E2EF1-67B1-47E8-918E-E7D85F490F4F}"/>
+    <VirtualFolder ID="{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}"/>
+    <File Path="Home.cpp"/>
+    <File Path="Home.cpp"/>
+    <File Path="Home.dfm"/>
+    <File Path="Home.h"/>
+    <File Path="Movies.cpp"/>
+    <File Path="Movies.cpp"/>
+    <File Path="Movies.dfm"/>
+    <File Path="Movies.h"/>
+    <File Path="Reservate.cpp"/>
+    <File Path="Reservate.cpp"/>
+    <File Path="Reservate.dfm"/>
+    <File Path="Reservate.h"/>
+    <File Path="ReservationCode.cpp"/>
+    <File Path="ReservationCode.cpp"/>
+    <File Path="ReservationCode.dfm"/>
+    <File Path="ReservationCode.h"/>
+    <File Path="MyReservation.cpp"/>
+    <File Path="MyReservation.cpp"/>
+    <File Path="MyReservation.dfm"/>
+    <File Path="MyReservation.h"/>
     <File Path="Project1.cpp"/>
     <File Path="Project1PCH1.h"/>
-    <File Path="Unit1.cpp"/>
-    <File Path="Unit1.cpp"/>
-    <File Path="Unit1.dfm"/>
-    <File Path="Unit1.h"/>
-    <File Path="Unit2.cpp"/>
-    <File Path="Unit2.cpp"/>
-    <File Path="Unit2.dfm"/>
-    <File Path="Unit2.h"/>
-    <File Path="Unit3.cpp"/>
-    <File Path="Unit3.cpp"/>
-    <File Path="Unit3.dfm"/>
-    <File Path="Unit3.h"/>
   </ProjectSortOrder>
 </BorlandProject>

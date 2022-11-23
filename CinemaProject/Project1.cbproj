@@ -131,6 +131,27 @@
         <BCC_PCHName_Clang>Project1PCH1.h</BCC_PCHName_Clang>
     </PropertyGroup>
     <ItemGroup>
+        <CppCompile Include="Home.cpp">
+            <VirtualFolder>{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}</VirtualFolder>
+            <Form>Form1</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Home.h</DependentOn>
+            <BuildOrder>2</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Movies.cpp">
+            <VirtualFolder>{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}</VirtualFolder>
+            <Form>Form2</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Movies.h</DependentOn>
+            <BuildOrder>3</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="MyReservation.cpp">
+            <VirtualFolder>{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}</VirtualFolder>
+            <Form>Form5</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>MyReservation.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Project1.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
@@ -138,41 +159,25 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
-        <CppCompile Include="Unit1.cpp">
-            <Form>Form1</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit1.h</DependentOn>
-            <BuildOrder>2</BuildOrder>
-        </CppCompile>
-        <CppCompile Include="Unit2.cpp">
-            <Form>Form2</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit2.h</DependentOn>
-            <BuildOrder>3</BuildOrder>
-        </CppCompile>
-        <CppCompile Include="Unit3.cpp">
+        <CppCompile Include="Reservate.cpp">
+            <VirtualFolder>{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}</VirtualFolder>
             <Form>Form3</Form>
             <FormType>dfm</FormType>
-            <DependentOn>Unit3.h</DependentOn>
+            <DependentOn>Reservate.h</DependentOn>
             <BuildOrder>4</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit4.cpp">
+        <CppCompile Include="ReservationCode.cpp">
+            <VirtualFolder>{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}</VirtualFolder>
             <Form>Form4</Form>
             <FormType>dfm</FormType>
-            <DependentOn>Unit4.h</DependentOn>
+            <DependentOn>ReservationCode.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit5.cpp">
-            <Form>Form5</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit5.h</DependentOn>
-            <BuildOrder>6</BuildOrder>
-        </CppCompile>
-        <FormResources Include="Unit3.dfm"/>
-        <FormResources Include="Unit2.dfm"/>
-        <FormResources Include="Unit1.dfm"/>
-        <FormResources Include="Unit4.dfm"/>
-        <FormResources Include="Unit5.dfm"/>
+        <FormResources Include="Reservate.dfm"/>
+        <FormResources Include="ReservationCode.dfm"/>
+        <FormResources Include="MyReservation.dfm"/>
+        <FormResources Include="Movies.dfm"/>
+        <FormResources Include="Home.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -199,6 +204,10 @@
                 <Source>
                     <Source Name="MainSource">Project1.cpp</Source>
                 </Source>
+                <VFOLDERS>
+                    <VFOLDER ID="{3B2E2EF1-67B1-47E8-918E-E7D85F490F4F}" name="models"/>
+                    <VFOLDER ID="{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}" name="views"/>
+                </VFOLDERS>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="3">
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32270mt.dll" Class="DependencyModule">
@@ -206,7 +215,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c270mt.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32270.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -222,11 +236,6 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
-                    <Platform Name="Win32">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32270.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -268,7 +277,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c270mt.dll" Class="DependencyModule">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
