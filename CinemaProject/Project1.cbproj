@@ -136,12 +136,22 @@
             <DependentOn>JsonObject.h</DependentOn>
             <BuildOrder>8</BuildOrder>
         </CppCompile>
+        <CppCompile Include="MovieModal.cpp">
+            <VirtualFolder>{3B2E2EF1-67B1-47E8-918E-E7D85F490F4F}</VirtualFolder>
+            <DependentOn>MovieModal.h</DependentOn>
+            <BuildOrder>10</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Movies.cpp">
             <VirtualFolder>{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}</VirtualFolder>
             <Form>Form2</Form>
             <FormType>dfm</FormType>
             <DependentOn>Movies.h</DependentOn>
             <BuildOrder>3</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="MoviesModel.cpp">
+            <VirtualFolder>{3B2E2EF1-67B1-47E8-918E-E7D85F490F4F}</VirtualFolder>
+            <DependentOn>MoviesModel.h</DependentOn>
+            <BuildOrder>9</BuildOrder>
         </CppCompile>
         <CppCompile Include="MyReservation.cpp">
             <VirtualFolder>{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}</VirtualFolder>
@@ -173,9 +183,9 @@
         </CppCompile>
         <FormResources Include="Reservate.dfm"/>
         <FormResources Include="ReservationCode.dfm"/>
+        <FormResources Include="MyReservation.dfm"/>
         <FormResources Include="Home.dfm"/>
         <FormResources Include="Movies.dfm"/>
-        <FormResources Include="MyReservation.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -203,9 +213,9 @@
                     <Source Name="MainSource">Project1.cpp</Source>
                 </Source>
                 <VFOLDERS>
+                    <VFOLDER ID="{73B61B4D-FDFD-43E4-9412-E93050D60D5D}" name="base"/>
                     <VFOLDER ID="{3B2E2EF1-67B1-47E8-918E-E7D85F490F4F}" name="models"/>
                     <VFOLDER ID="{FCD087C9-60B0-4E5E-975F-C88F63DD3D3D}" name="views"/>
-                    <VFOLDER ID="{73B61B4D-FDFD-43E4-9412-E93050D60D5D}" name="base"/>
                 </VFOLDERS>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="3">
@@ -214,8 +224,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgcrtl.dylib" Class="DependencyModule">
-                    <Platform Name="OSX64">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -229,13 +239,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgcrtl.dylib" Class="DependencyModule">
-                    <Platform Name="OSX32">
+                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
-                    <Platform Name="Win32">
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgcrtl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -271,12 +281,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c270mt.dll" Class="DependencyModule">
-                    <Platform Name="Win32">
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgcrtl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c270mt.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
