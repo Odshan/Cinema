@@ -10,9 +10,15 @@
 #include <Vcl.ExtCtrls.hpp>
 
 #include "MovieModel.h"
+#include "FoodController.h"
+
+class FoodController;
+
 //---------------------------------------------------------------------------
 class TForm3 : public TForm
 {
+	FoodController *d_food;
+
 __published:	// IDE-managed Components
 	TPanel *Panel1;
 	TPanel *Panel2;
