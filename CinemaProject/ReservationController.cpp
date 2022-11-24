@@ -2,12 +2,12 @@
 
 #pragma hdrstop
 
-#include "ReservationModel.h"
 #include "ReservationController.h"
+#include "ReservationModel.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
 ReservationController::ReservationController() :
-	TctlJsonDatabase< ReservationModel >("Reservations.json")
+	TctlJsonDatabase< ReservationModel >("reservations.json")
 {
 }
