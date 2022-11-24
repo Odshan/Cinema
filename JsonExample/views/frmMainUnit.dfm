@@ -119,7 +119,7 @@ object frmMain: TfrmMain
   end
   object cmdAdd: TButton
     Left = 70
-    Top = 255
+    Top = 262
     Width = 75
     Height = 25
     Caption = 'cmdAdd'

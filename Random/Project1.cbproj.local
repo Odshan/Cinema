@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2022/11/23 10:47:31.000.267,=C:\Users\DhrGo\Desktop\Cinema\Project1PCH1.h</Transaction>
-    <Transaction>2022/11/23 10:47:31.000.360,=C:\Users\DhrGo\Desktop\Cinema\Unit1.cpp</Transaction>
-    <Transaction>2022/11/23 10:52:07.000.636,C:\Users\DhrGo\Desktop\Cinema\Project1.cbproj=C:\Users\DhrGo\Desktop\Cinema\Project1.cbproj</Transaction>
+    <Transaction>2022-11-23 10:47:31.000.267,=C:\Users\DhrGo\Desktop\Cinema\Project1PCH1.h</Transaction>
+    <Transaction>2022-11-23 10:47:31.000.360,=C:\Users\DhrGo\Desktop\Cinema\Unit1.cpp</Transaction>
+    <Transaction>2022-11-23 10:52:07.000.636,C:\Users\DhrGo\Desktop\Cinema\Project1.cbproj=C:\Users\DhrGo\Desktop\Cinema\Project1.cbproj</Transaction>
   </Transactions>
 </BorlandProject>

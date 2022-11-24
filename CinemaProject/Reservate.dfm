@@ -19,7 +19,7 @@ object Form3: TForm3
   TextHeight = 13
   object Panel1: TPanel
     Left = -9
-    Top = 0
+    Top = 1
     Width = 720
     Height = 40
     Anchors = [akLeft, akTop, akRight, akBottom]
@@ -143,6 +143,7 @@ object Form3: TForm3
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      OnClick = Button1Click
     end
   end
   object Panel4: TPanel
@@ -185,7 +186,7 @@ object Form3: TForm3
     end
     object ListView1: TListView
       Left = 25
-      Top = 62
+      Top = 54
       Width = 226
       Height = 291
       Margins.Left = 5

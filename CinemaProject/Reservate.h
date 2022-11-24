@@ -14,11 +14,16 @@
 #include <Vcl.ComCtrls.hpp>
 
 class FoodController;
+class ReservationController;
 
 //---------------------------------------------------------------------------
 class TForm3 : public TForm
 {
 	FoodController *d_food;
+	ReservationController *d_reservation;
+
+	std::string MovieName;
+	std::string MoviePrice;
 
 __published:	// IDE-managed Components
 	TPanel *Panel1;
@@ -38,6 +43,7 @@ __published:	// IDE-managed Components
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall ListView1SelectItem(TObject *Sender, TListItem *Item, bool Selected);
 	void __fastcall ListView1Click(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
 
 
 
