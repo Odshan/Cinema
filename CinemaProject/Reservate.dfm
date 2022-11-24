@@ -157,7 +157,7 @@ object Form3: TForm3
       Left = 56
       Top = 23
       Width = 169
-      Height = 33
+      Height = 31
       AutoSize = False
       Caption = 'Available Seats:'
       Font.Charset = DEFAULT_CHARSET
