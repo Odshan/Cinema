@@ -44,3 +44,23 @@ void TForm3::SetMovie(MovieModel *Movie)
 	Label6->Caption =	"Price : " + Movie->Price + "\n" +
 						"Starting Time : " + Movie->StartTime;
 }
+
+
+
+
+void __fastcall TForm3::ListView1SelectItem(TObject *Sender, TListItem *Item, bool Selected)
+
+{
+    Button1->Enabled = true;
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm3::ListView1Click(TObject *Sender)
+{
+	if (ListView1->SelCount == 0) {
+	Button1->Enabled = false;
+	}
+}
+//---------------------------------------------------------------------------
+
