@@ -22,8 +22,7 @@ class TForm3 : public TForm
 	FoodController *d_food;
 	ReservationController *d_reservation;
 
-	std::string MovieName;
-	std::string MoviePrice;
+    MovieModel* d_model;
 
 __published:	// IDE-managed Components
 	TPanel *Panel1;

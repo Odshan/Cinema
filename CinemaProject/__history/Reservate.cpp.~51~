@@ -14,6 +14,7 @@
 TForm3 *Form3;
 
 std::string MovieName;
+std::string MoviePrice;
 //---------------------------------------------------------------------------
 __fastcall TForm3::TForm3(TComponent* Owner)
 	: TForm(Owner),
@@ -46,13 +47,12 @@ void TForm3::SetMovie(MovieModel *Movie)
 						"Duration : " + Movie->Duration;
 
 	Label6->Caption =	"Price : " + Movie->Price + "\n" +
-						"Starting Time : " + Movie->StartTime;
+						"Starting Time : " + Movie->StartTime;      \
 
 //	MovieName = Movie->Name;
+//	Movieprice = Movie->Price;
+
 }
-
-
-
 
 void __fastcall TForm3::ListView1SelectItem(TObject *Sender, TListItem *Item, bool Selected)
 
@@ -72,19 +72,19 @@ void __fastcall TForm3::ListView1Click(TObject *Sender)
 
 void __fastcall TForm3::Button1Click(TObject *Sender)
 {
-
-
-
-
+	String s;
+	for (int i = 0; i < 4; i++) {
+		s += String(1 + (rand() % 9));
+	}
 
 
 	d_reservation->Reload();
 
    auto o       = new ReservationModel();
-   o->MovieName 	= "name";
-   o->SeatNumber    = 1;
-   o->PriceTotal 	= 1;
-   o->ReservationCode = "0";
+   o->MovieName 	= "name"; //MovieName
+   o->SeatNumber    = ListView1->ItemIndex;
+   o->PriceTotal 	= 1; //MoviePrice
+   o->ReservationCode = s;
    d_reservation->Add(o);
 
    d_reservation->SaveToDisk();

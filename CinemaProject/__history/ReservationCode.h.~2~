@@ -1,47 +1,27 @@
 //---------------------------------------------------------------------------
 
-#ifndef ReservateH
-#define ReservateH
+#ifndef ReservationCodeH
+#define ReservationCodeH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
-
-#include "MovieModel.h"
-#include "FoodController.h"
-#include <Vcl.ComCtrls.hpp>
-
-class FoodController;
-
 //---------------------------------------------------------------------------
-class TForm3 : public TForm
+class TForm4 : public TForm
 {
-	FoodController *d_food;
-
-__published:	// IDE-managed Components
+	__published:	// IDE-managed Components
 	TPanel *Panel1;
-	TPanel *Panel2;
-	TLabel *Label1;
+	TEdit *Edit1;
 	TPanel *Panel3;
-	TLabel *Label3;
-	TPanel *Panel4;
-	TPanel *Panel5;
-	TLabel *Label2;
-	TLabel *Label5;
-	TPanel *Panel36;
-	TLabel *Label6;
-	TListView *FoodList;
-	void __fastcall Label3Click(TObject *Sender);
-	void __fastcall FormCreate(TObject *Sender);
+	TLabel *Label4;
+
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm3(TComponent* Owner);
-
-	void SetMovie(MovieModel *aValue);
+	__fastcall TForm4(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm3 *Form3;
+extern PACKAGE TForm4 *Form4;
 //---------------------------------------------------------------------------
 #endif

@@ -15,7 +15,7 @@ void ReservationModel::FromJson(TJSONObject *aObject)
 {
    d_movieName = GetString(aObject, "MovieName");
    d_seatNumber = GetInteger(aObject, "SeatNumber");
-   d_priceTotal = GetInteger(aObject, "PriceTotal");
+   d_priceTotal = GetString(aObject, "PriceTotal");
    d_reservationCode = GetString(aObject, "ReservationCode");
 }
 
