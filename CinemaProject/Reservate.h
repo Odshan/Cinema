@@ -30,11 +30,20 @@ __published:	// IDE-managed Components
 	TPanel *Panel5;
 	TLabel *Label2;
 	TLabel *Label5;
-	TPanel *Panel36;
 	TLabel *Label6;
 	TListView *FoodList;
+	TListView *ListView1;
+	TButton *Button1;
 	void __fastcall Label3Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall ListView1SelectItem(TObject *Sender, TListItem *Item, bool Selected);
+	void __fastcall ListView1Click(TObject *Sender);
+
+
+
+
+
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm3(TComponent* Owner);
