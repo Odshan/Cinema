@@ -5,9 +5,9 @@
 #include <tchar.h>
 //---------------------------------------------------------------------------
 USEFORM("MyReservation.cpp", Form5);
-USEFORM("Reservate.cpp", Form3);
-USEFORM("ReservationCode.cpp", Form4);
 USEFORM("Movies.cpp", Form2);
+USEFORM("ReservationCode.cpp", Form4);
+USEFORM("Reservate.cpp", Form3);
 USEFORM("Home.cpp", Form1);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
