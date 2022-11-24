@@ -16,7 +16,7 @@ __fastcall TForm5::TForm5(TComponent* Owner)
 
 void TForm5::SetReservationCode(RawByteString *o)
 {
-   Label1->Caption = o;
+//   Label1->Caption = o;
 }
 
 

@@ -19,13 +19,13 @@ __fastcall TForm4::TForm4(TComponent* Owner)
 
 void __fastcall TForm4::Label1Click(TObject *Sender)
 {
-	if (ReservationCode->Text != "") {
-		UTF8String * o = ReservationCode->Text;
-		Hide();
-		Form5->SetReservationCode(o);
-		Form5->ShowModal();
-		Close();
-	}
+//	if (ReservationCode->Text != "") {
+//		RawByteString * o = ReservationCode->Text;
+//		Hide();
+//		Form5->SetReservationCode(o);
+//		Form5->ShowModal();
+//		Close();
+//	}
 }
 //---------------------------------------------------------------------------
 

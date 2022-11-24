@@ -1,12 +1,12 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{8D79A5E0-805B-430F-93FE-394294A091C4}</ProjectGuid>
+        <ProjectGuid>{B1B49959-F2FE-48A8-BBF6-FA8776E5B0D3}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
         <Projects Include="Project1.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="..\Random\Project1.cbproj">
+        <Projects Include="..\JsonExample\JsonDBexample.cbproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -18,22 +18,31 @@
         </BorlandProject>
     </ProjectExtensions>
     <Target Name="Project1">
-        <MSBuild Projects="..\Random\Project1.cbproj"/>
+        <MSBuild Projects="Project1.cbproj"/>
     </Target>
     <Target Name="Project1:Clean">
-        <MSBuild Projects="..\Random\Project1.cbproj" Targets="Clean"/>
+        <MSBuild Projects="Project1.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="Project1:Make">
-        <MSBuild Projects="..\Random\Project1.cbproj" Targets="Make"/>
+        <MSBuild Projects="Project1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="JsonDBexample">
+        <MSBuild Projects="..\JsonExample\JsonDBexample.cbproj"/>
+    </Target>
+    <Target Name="JsonDBexample:Clean">
+        <MSBuild Projects="..\JsonExample\JsonDBexample.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JsonDBexample:Make">
+        <MSBuild Projects="..\JsonExample\JsonDBexample.cbproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="Project1;Project1"/>
+        <CallTarget Targets="Project1;JsonDBexample"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Project1:Clean;Project1:Clean"/>
+        <CallTarget Targets="Project1:Clean;JsonDBexample:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Project1:Make;Project1:Make"/>
+        <CallTarget Targets="Project1:Make;JsonDBexample:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
