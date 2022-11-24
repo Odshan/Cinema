@@ -27,7 +27,7 @@ object Form3: TForm3
     Color = clBackground
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
-    Font.Height = -20
+    Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentBackground = False
@@ -44,17 +44,32 @@ object Form3: TForm3
     ParentBackground = False
     TabOrder = 1
     object Label1: TLabel
-      Left = 7
-      Top = 9
-      Width = 193
-      Height = 24
+      Left = 8
+      Top = 13
+      Width = 156
+      Height = 19
       Caption = '{InsertMovieData}'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBackground
-      Font.Height = -20
+      Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
+      WordWrap = True
+    end
+    object Label6: TLabel
+      Left = 8
+      Top = 352
+      Width = 156
+      Height = 19
+      Caption = '{InsertMovieData}'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      WordWrap = True
     end
   end
   object Panel3: TPanel
@@ -80,24 +95,10 @@ object Form3: TForm3
       ParentFont = False
       OnClick = Label3Click
     end
-    object Label4: TLabel
-      Left = -1
-      Top = 8
-      Width = 209
-      Height = 33
-      AutoSize = False
-      Caption = '{InsertFoodOptions}'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBackground
-      Font.Height = -20
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
     object Label5: TLabel
-      Left = 55
-      Top = 275
-      Width = 114
+      Left = 47
+      Top = 274
+      Width = 122
       Height = 16
       AutoSize = False
       Caption = '{InsertTotalCost}'
@@ -124,9 +125,29 @@ object Form3: TForm3
       ParentFont = False
       TabOrder = 0
     end
+    object FoodList: TListView
+      Left = 8
+      Top = 12
+      Width = 201
+      Height = 249
+      Color = clScrollBar
+      Columns = <
+        item
+          Caption = 'name'
+          Width = 100
+        end
+        item
+          Caption = 'Price'
+          Width = 40
+        end>
+      ReadOnly = True
+      RowSelect = True
+      TabOrder = 1
+      ViewStyle = vsReport
+    end
   end
   object Panel4: TPanel
-    Left = 214
+    Left = 215
     Top = 46
     Width = 275
     Height = 425
@@ -642,6 +663,33 @@ object Form3: TForm3
       ParentBackground = False
       ParentFont = False
       TabOrder = 30
+    end
+    object SeatsList: TListView
+      Left = 24
+      Top = 62
+      Width = 233
+      Height = 276
+      Color = clScrollBar
+      Columns = <
+        item
+          Caption = 'Col1'
+        end
+        item
+          Caption = 'Col2'
+        end
+        item
+          Caption = 'Col3'
+        end
+        item
+          Caption = 'Col4'
+        end
+        item
+          Caption = 'Col5'
+        end
+        item
+          Caption = 'Col6'
+        end>
+      TabOrder = 31
     end
   end
 end
